@@ -1,7 +1,7 @@
 <html>
 
 <h1> Bitwise Calculator Project </h1>
-<subtitle> Author: Youssef Ibrahim - 24/October/20222 </subtitle>
+<subtitle> Author: Youssef Ibrahim - 24/October/2022 </subtitle>
 
 <h2> Introduction </h2>
 This is a pet project of mine where I aim to recreate the programming calcualtor function in Windows in hardware. The build features my favourite 5x7 LED matrices - the LTP-305G. The key matrix is based around the Cherry MX blue tactile keys for my pleasure.
@@ -35,4 +35,8 @@ This sub-assembly consists of:
 </ul>
 
 <h2> Mode of operation </h2>
-The controller continously scans the key matrix using the 74HC165 shift register. Key inputs are parsed accordingly in software and the display is updated via the I2C interface. Simple, really! All the magic happens in the software which implements the calculator function as well as drives the display animations. One of the keys on the key matrix is wired directly to the micro to serve as a wake-up interrupt since this isn't straight forward to implement using the shift register. This power-down feature is not currently implemented.
+<p>The controller continously scans the key matrix using the 74HC165 shift register. Key inputs are parsed accordingly in software and the display is updated via the I2C interface. Simple, really! </p>
+
+<p>All the magic happens in the software which implements the calculator function as well as drives the display animations. One of the keys on the key matrix is wired directly to the micro to serve as a wake-up interrupt since this isn't straight forward to implement using the shift register. This power-down feature is not currently implemented. </p>
+
+<p> This project is still a work in progress. </p>
